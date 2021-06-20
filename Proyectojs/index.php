@@ -1,4 +1,3 @@
-<html>
 <script>
     function getParametro(nombre) {
         return (window.location.search.match(new RegExp('[?&]' + nombre + '=([^&]+)')) || [, null])[1];
@@ -27,4 +26,4 @@
         document.getElementById("tablero").innerHTML = turno + tabla;
     }
 </script>
-</html>
+<?php echo 24?>
