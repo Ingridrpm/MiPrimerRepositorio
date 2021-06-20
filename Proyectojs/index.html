@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html><html>
+    <head>
     <script>
         function getParametro(nombre) {
             return (window.location.search.match(new RegExp('[?&]' + nombre + '=([^&]+)')) || [, null])[1];
@@ -27,12 +27,16 @@
             tabla += "</table>";
             //document.getElementById("tablero").innerHTML = turno + tabla;
             //var dom = document.implementation.createDocument('http://www.w3.org/1999/xhtml', 'html', null);
-            var body = document.createElement("body");
-            body.innerHTML = "53";
+            ////var body = document.createElement("body");
+            console.log(document.getElementsByTagName("body"))
+            var arr = Array.from(document.getElementsByTagName("body"));
+            console.log(arr)
+            document.getElementsByName("body").item(0).innerHTML = "35";
             //dom.firstChild.appendChild(body);
-            document.appendChild(body);
+            ////document.firstChild.appendChild(body);
 
         }
     </script>
-
+</head>
+<body></body>
 </html>
